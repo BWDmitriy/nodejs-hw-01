@@ -1,1 +1,72 @@
-[]
+[
+  {
+    "id": "b695d0aa-f591-4f97-88f6-d7d04d5a29c5",
+    "name": "Brandi Conroy",
+    "phone": "(893) 368-2023 x281",
+    "email": "Gavin_Cremin@hotmail.com",
+    "job": "Corporate Web Planner"
+  },
+  {
+    "id": "f9164b17-330c-4e04-b707-f1fc09b6dab0",
+    "name": "Patrick Kling",
+    "phone": "1-894-336-4759 x9039",
+    "email": "Audra42@yahoo.com",
+    "job": "Lead Applications Producer"
+  },
+  {
+    "id": "09f8a507-2b3d-489b-8e02-1919d5fffbb8",
+    "name": "Philip Hyatt",
+    "phone": "784.833.2178",
+    "email": "Maeve_Jaskolski87@gmail.com",
+    "job": "Internal Directives Designer"
+  },
+  {
+    "id": "58fbc663-0c67-48b7-9c1c-f1c9132e15d2",
+    "name": "Albert Jacobson",
+    "phone": "757.852.4017",
+    "email": "Norris_Wolff@yahoo.com",
+    "job": "Dynamic Optimization Agent"
+  },
+  {
+    "id": "f8719dd0-6b25-4a0f-9e49-5e21a5135e86",
+    "name": "Clarence Grimes",
+    "phone": "896-841-9556",
+    "email": "Katlyn.Reichert54@gmail.com",
+    "job": "Legacy Directives Producer"
+  },
+  {
+    "id": "e142533b-86cd-4f61-949e-54ce6034fdd9",
+    "name": "May Zieme",
+    "phone": "549.778.2542 x3673",
+    "email": "Tanya_Wisozk@gmail.com",
+    "job": "Chief Group Strategist"
+  },
+  {
+    "id": "71255c55-c136-48b5-b138-b3261049e1c5",
+    "name": "Eloise Kunze",
+    "phone": "550-289-9606",
+    "email": "Jaqueline1@yahoo.com",
+    "job": "Principal Operations Director"
+  },
+  {
+    "id": "3fcda4bf-e364-4172-942e-ec36c657d7ff",
+    "name": "Joyce Bogisich-Hamill",
+    "phone": "1-312-723-7786",
+    "email": "Camryn80@hotmail.com",
+    "job": "Forward Configuration Administrator"
+  },
+  {
+    "id": "9c757839-aa6a-42f9-919f-670fb8415ee3",
+    "name": "Lucas Harvey Jr.",
+    "phone": "(407) 762-5396 x3619",
+    "email": "Art.Cormier@hotmail.com",
+    "job": "Human Usability Manager"
+  },
+  {
+    "id": "36ce5c69-b259-4403-88d4-40e892a998fb",
+    "name": "Tina Grady-Shanahan MD",
+    "phone": "1-770-592-2551 x32728",
+    "email": "Emma.Krajcik79@gmail.com",
+    "job": "Internal Infrastructure Consultant"
+  }
+]
