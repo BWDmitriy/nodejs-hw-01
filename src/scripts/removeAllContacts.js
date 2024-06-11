@@ -9,6 +9,7 @@ const __dirname = path.dirname(__filename);
 export const removeAllContacts = async () => {
   try {
     const filePath = path.resolve(__dirname, PATH_DB);
+
     try {
       await fs.access(filePath);
     } catch (err) {

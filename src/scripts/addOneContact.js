@@ -1,8 +1,47 @@
 import { PATH_DB } from '../constants/contacts.js';
-import generateContacts from './generateContacts.js';
+// import generateContacts from './generateContacts.js';
+import { createFakeContact } from '../utils/createFakeContact.js';
+import fs from 'fs/promises';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 export const addOneContact = async () => {
-  await generateContacts(1);
+  // Значительно упрощенная реализация, если убрать вызов функции в generateContacts.
+  // await generateContacts(1);
+
+  try {
+    const filePath = path.resolve(__dirname, PATH_DB);
+    const dirPath = path.dirname(filePath);
+
+    console.log('Directory Path:', dirPath);
+    console.log('File Path:', filePath);
+
+    await fs.mkdir(dirPath, { recursive: true });
+    console.log('Directory created or already exists.');
+
+    const data = [];
+    let temp = createFakeContact();
+    data.push(temp);
+
+    try {
+      await fs.access(filePath);
+    } catch (err) {
+      await fs.writeFile(filePath, '[]', 'utf8');
+    }
+
+    const existingData = await fs.readFile(filePath, 'utf8');
+    const parsedData = JSON.parse(existingData);
+
+    const updatedData = parsedData.concat(data);
+
+    await fs.writeFile(filePath, JSON.stringify(updatedData, null, 2), 'utf8');
+    console.log('Data added');
+  } catch (err) {
+    console.error('Error:', err);
+  }
 };
 
 addOneContact();

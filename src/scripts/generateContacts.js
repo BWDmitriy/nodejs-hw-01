@@ -51,4 +51,4 @@ const generateContacts = async (number) => {
 export default generateContacts;
 
 // Вызываем функцию для генерации контактов
-// generateContacts(5);
+generateContacts(5);
