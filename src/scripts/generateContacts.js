@@ -25,9 +25,6 @@ const generateContacts = async (number) => {
       data.push(temp);
     }
 
-    // Преобразуем данные в строку JSON перед добавлением в файл
-    const jsonData = JSON.stringify(data, null, 2);
-
     // Проверяем, существует ли файл, и создаем его, если нет
     try {
       await fs.access(filePath);
@@ -44,9 +41,9 @@ const generateContacts = async (number) => {
 
     // Записываем обновленные данные обратно в файл
     await fs.writeFile(filePath, JSON.stringify(updatedData, null, 2), 'utf8');
-    console.log('Дані успішно додані до файлу.');
+    console.log('Data added');
   } catch (err) {
-    console.error('Помилка додавання даних до файлу:', err);
+    console.error('Error:', err);
   }
 };
 
@@ -54,4 +51,4 @@ const generateContacts = async (number) => {
 export default generateContacts;
 
 // Вызываем функцию для генерации контактов
-generateContacts(5);
+// generateContacts(5);
