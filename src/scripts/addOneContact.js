@@ -3,17 +3,13 @@ import { PATH_DB } from '../constants/contacts.js';
 import { createFakeContact } from '../utils/createFakeContact.js';
 import fs from 'fs/promises';
 import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 export const addOneContact = async () => {
   // Значительно упрощенная реализация, если убрать вызов функции в generateContacts.
   // await generateContacts(1);
 
   try {
-    const filePath = path.resolve(__dirname, PATH_DB);
+    const filePath = PATH_DB; // Используем PATH_DB напрямую
     const dirPath = path.dirname(filePath);
 
     console.log('Directory Path:', dirPath);
